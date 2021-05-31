@@ -1,0 +1,20 @@
+# DataSource Config
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/nblog?useUnicode=true&useSSL=false&characterEncoding=utf8&serverTimezone=Asia/Shanghai
+    username: root
+    password: 20010108
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**Mapper.xml
+blog:
+  jwt:
+#    密钥
+    secret: f4e2e52034348f86b67cde581c0f9eb5
+#    有效时长
+    expire: 604800
+    header: Authorization
+#shiro-redis:
+#  enabled: true
+#  redis-manager:
+#    host: redis:6379
